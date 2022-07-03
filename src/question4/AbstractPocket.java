@@ -1,4 +1,5 @@
 package question4;
 
-public abstract class AbstractPocket {
+public interface AbstractPocket {
+    void add();
 }

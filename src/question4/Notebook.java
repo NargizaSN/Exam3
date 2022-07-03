@@ -1,22 +1,21 @@
 package question4;
 
-public class Coin implements AbstractMetal {
+public class Notebook implements AbstractPaper {
     private final String name;
 
-    public Coin(String name) {
+    public Notebook(String name) {
         this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Coin{" +
+        return "Notebook{" +
                 "name='" + name + '\'' +
                 '}';
     }
 
     @Override
     public String makeNoise() {
-        return name + " (" + AbstractMetal.super.makeNoise() + ")";
+        return name + " (" + AbstractPaper.super.makeNoise() + ")";
     }
-
 }
